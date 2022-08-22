@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>登録完了</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+  <body>
+    <section class="hero is-warning">
+  <div class="hero-body">
+    <div id="app" class="container">
+    <h1 class="title is-size-1">
+      登録完了
+    </h1>
+    <p class="is-size-3">お客様の会員登録が正常に完了しました。</p>
+    <p class="is-size-3 has-text-danger">３日以内に<span class="has-text-weight-bold">98,000円</span>お支払いください。</p>
+    <p class="is-size-3 has-text-danger">お支払いが確認できない場合は<span class="has-text-weight-bold">法的処置</span>を取らせていただきますのでご注意ください。</p>
+    <div class="notification is-danger" v-bind:style="{background: color}">
+        <p class="is-size-2 has-text-centered">残り{{ count }}秒</p>
+    </div>
+  </div>
+</div>
+</section>
+<section class="section">
+  <div class="container">
+    <h2 class="title">お問い合わせ</h2>
+    <table class="table is-striped is-fullwidth">
+      <tr>
+        <td>電話番号</td><td>0120-999-999</td>
+      </tr>
+      <tr>
+        <td>メールアドレス</td><td>info@example.com</td>
+      </tr>
+    </table>
+    <h2 class="title">お振込先</h2>
+    <table  class="table is-striped is-fullwidth">
+      <tr>
+        <td>銀行名（銀行コード）</td><td>極道銀行（5910）</td>
+      </tr>
+      <tr>
+        <td>支店名（支店コード）</td><td>白菜支店（8931）</td>
+      </tr>
+      <tr>
+        <td>種別</td><td>普通貯金</td>
+      </tr>
+      <tr>
+        <td>口座番号</td><td>93939393</td>
+      </tr>
+    </table>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script type="text/javascript" src="invoice.js"></script>
+  </body>
+</html>
